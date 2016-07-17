@@ -13,65 +13,58 @@
 @viewport {
   width: device-width;
 }
-
 body {
-    background: #fff;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 300;
-    -webkit-font-smoothing: antialiased;
-    -webkit-text-size-adjust: 100%;
+  background: #fff;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
 }
-
 :focus {
-    outline: 0 !important
+  outline: 0 !important
 }
-
 strong {
-	font-weight: 600;
+  font-weight: 600;
 }
-
 a, a:hover, a:focus {
-	color: #48607D;
-	text-decoration: none;
-    -o-transition: all .3s;
-    -moz-transition: all .3s;
-    -webkit-transition: all .3s;
-    -ms-transition: all .3s;
-    transition: all .3s;
+  color: #48607D;
+  text-decoration: none;
+  -o-transition: all .3s;
+  -moz-transition: all .3s;
+  -webkit-transition: all .3s;
+  -ms-transition: all .3s;
+  transition: all .3s;
 }
-
 .btn:focus, .btn:active:focus, .btn.active:focus {
-	outline: 0;
-	color: #fff;
+  outline: 0;
+  color: #fff;
 }
-
 .btn {
   border-radius: 0px;
   margin-bottom: 20px;
-    font-weight: 300;
-    font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-family: 'Open Sans', sans-serif;
 }
-
 .btn-lg {
-	display: inline-block;
-	height: 52px;
-    margin:20px;
-    padding: 0 20px;
-	background: #FF797E;
-    font-size: 22px;
-    line-height: 48px;
-    color: #fff;
+  display: inline-block;
+  height: 52px;
+  margin: 20px;
+  padding: 0 20px;
+  background: #C7B757;
+  font-size: 22px;
+  line-height: 48px;
+  color: #fff;
+}
+.btn-lg:hover, .btn-lg:focus, .btn-lg:active, .btn-lg.active {
+  background: #8EAA94;
+  color: #fff;
+  -o-transition: all .3s;
+  -moz-transition: all .3s;
+  -webkit-transition: all .3s;
+  -ms-transition: all .3s;
+  transition: all .3s;
 }
 
-.btn-lg:hover, .btn-lg:focus, .btn-lg:active, .btn-lg.active {
-	background: #FF6065;
-	color: #fff;
-    -o-transition: all .3s;
-    -moz-transition: all .3s;
-    -webkit-transition: all .3s;
-    -ms-transition: all .3s;
-    transition: all .3s;
-}
 /***** Main content *****/
 
 .main-content {
@@ -99,10 +92,10 @@ a, a:hover, a:focus {
   font-size: 58px;
   line-height: 68px;
   font-weight: 600;
-  color: #FF797E;
+  color: #C7B757;
 }
 .main-content .logo a:hover {
-  color: #FF6065;
+  color: #8EAA94;
 }
 .main-content .description {
   margin: 40px 0 10px 0;
@@ -123,261 +116,226 @@ a, a:hover, a:focus {
 /***** Summary *****/
 
 .summary-container {
-    margin: 0 auto;
-    padding-bottom: 60px;
-    color: #888;
-    text-align: center;
+  margin: 0 auto;
+  padding-bottom: 60px;
+  color: #888;
+  text-align: center;
 }
-
 .summary {
-    margin-top: 60px;
-    padding-bottom: 10px;
+  margin-top: 60px;
+  padding-bottom: 10px;
 }
-
 .summary h3 {
-    color: #555;
+  color: #555;
 }
-
 .summary p {
-	margin-top: 30px;
-    font-size: 22px;
-    line-height: 36px;
+  margin-top: 30px;
+  font-size: 22px;
+  line-height: 36px;
 }
-
 .summary-box {
-	text-align: center;
-	background: transparent;
-	padding-top: 40px;
-	padding-bottom: 40px;
-	transition: all 0.7s;
-	-webkit-transition: all 0.7s;
-	-moz-transition: all 0.7s;
-	-o-transition: all 0.7s;
+  text-align: center;
+  background: transparent;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  transition: all 0.7s;
+  -webkit-transition: all 0.7s;
+  -moz-transition: all 0.7s;
+  -o-transition: all 0.7s;
 }
-
-.summary-box:hover{
-	background: #eee;
-	transition: all 0.7s;
-	-webkit-transition: all 0.7s;
-	-moz-transition: all 0.7s;
-	-o-transition: all 0.7s;
+.summary-box:hover {
+  background: #eee;
+  transition: all 0.7s;
+  -webkit-transition: all 0.7s;
+  -moz-transition: all 0.7s;
+  -o-transition: all 0.7s;
 }
-
 .summary-box h4 {
-	padding: 10px 0;
-	font-size: 30px;
-    font-weight: 300;
-    color: #555;
-    line-height: 34px;
+  padding: 10px 0;
+  font-size: 30px;
+  font-weight: 300;
+  color: #555;
+  line-height: 34px;
 }
-
 .summary-box p {
-	font-size: 17px;
-    line-height: 32px;
+  font-size: 17px;
+  line-height: 32px;
+}
+.summary-box .icon {
+  position: relative;
+  padding: 32px 0;
+  text-align: center;
+  width: 92px;
+  height: 92px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  background: #eee;
+  display: inline-block;
+  margin-bottom: 18px;
+  transition: all 0.7s;
+  -webkit-transition: all 0.7s;
+  -moz-transition: all 0.7s;
+  -o-transition: all 0.7s;
+}
+.summary-box .icon i {
+  color: #444;
+  font-size: 28px;
+  transition: all 0.7s;
+  -webkit-transition: all 0.7s;
+  -moz-transition: all 0.7s;
+  -o-transition: all 0.7s;
+}
+.summary-box:hover .icon {
+  background: #444;
+  transition: all 0.7s;
+  -webkit-transition: all 0.7s;
+  -moz-transition: all 0.7s;
+  -o-transition: all 0.7s;
+}
+.summary-box:hover .icon i {
+  color: #eee;
+  transition: all 0.7s;
+  -webkit-transition: all 0.7s;
+  -moz-transition: all 0.7s;
+  -o-transition: all 0.7s;
 }
 
-.summary-box .icon{
-	position: relative;
-	padding: 32px 0;
-	text-align: center;
-	width:92px;
-	height: 92px;
-	-webkit-border-radius: 50%;
-	-moz-border-radius: 50%;
-	border-radius: 50%;
-	background: #eee;
-	display: inline-block;
-	margin-bottom: 18px;
-	transition: all 0.7s;
-	-webkit-transition: all 0.7s;
-	-moz-transition: all 0.7s;
-	-o-transition: all 0.7s;
-}
-
-.summary-box .icon i{
-	color:#444;
-	font-size: 28px;
-	transition: all 0.7s;
-	-webkit-transition: all 0.7s;
-	-moz-transition: all 0.7s;
-	-o-transition: all 0.7s;
-}
-
-.summary-box:hover .icon{
-	background: #444;
-	transition: all 0.7s;
-	-webkit-transition: all 0.7s;
-	-moz-transition: all 0.7s;
-	-o-transition: all 0.7s;
-}
-
-.summary-box:hover .icon i{
-	color: #eee;
-	transition: all 0.7s;
-	-webkit-transition: all 0.7s;
-	-moz-transition: all 0.7s;
-	-o-transition: all 0.7s;
-}
-
-/***** Simulation *****/
+/***** Simulations *****/
 
 .simulation-container {
-    margin: 0 auto;
-    text-align: left;
+  margin: 0 auto;
+  text-align: left;
 }
-
 .simulation-text {
-    margin-top: 60px;
-    padding-bottom: 10px;
+  margin-top: 60px;
+  padding-bottom: 10px;
 }
-
 .simulation-text p {
-	margin-top: 30px;
-	padding: 0 10px;
-    font-size: 22px;
-    line-height: 36px;
+  margin-top: 30px;
+  padding: 0 10px;
+  font-size: 22px;
+  line-height: 36px;
 }
-
-.simulation-img {
-    text-align: center;
-	margin-top: 30px;
+.simulation-sim {
+  text-align: center;
+  margin-top: 30px;
 }
-
 .simulation-bg1 {
-	background: #FF797E;
-	color: #fff;
+  background: #8EAA94;
+  color: #fff;
 }
 .simulation-bg1 h3 {
-	padding: 0 10px;
-	color: #fff;
+  padding: 0 10px;
+  color: #fff;
 }
-
 .simulation-bg2 {
-	background: #48607D;
-	color: #fff;
+  background: #C7B757;
+  color: #fff;
 }
-
 .simulation-bg2 h3 {
-	padding: 0 10px;
-	color: #fff;
+  padding: 0 10px;
+  color: #fff;
 }
-
 .simulation-button {
-	margin-top: 40px;
-	margin-left: 10px;
+  margin-top: 40px;
+  margin-left: 10px;
 }
-
 .simulation-button i {
-	padding-right: 8px;
-	font-size: 24px;
-	vertical-align: middle;
+  padding-right: 8px;
+  font-size: 24px;
+  vertical-align: middle;
 }
 
 /***** Contact *****/
 
 .contact-container {
-	margin: 0 auto;
-    background: #eee;
+  margin: 0 auto;
+  background: #eee;
 }
-
 .contact {
-    margin-top: 60px;
-    padding-bottom: 20px;
-    text-align: center;
+  margin-top: 60px;
+  padding-bottom: 20px;
+  text-align: center;
 }
-
 .contact h3 {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 50px;
-    font-weight: 300;
-    color: #555;
-    line-height: 54px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 50px;
+  font-weight: 300;
+  color: #555;
+  line-height: 54px;
 }
-
 .contact p {
-	margin-top: 30px;
-    font-size: 22px;
-    color: #888;
-    line-height: 36px;
+  margin-top: 30px;
+  font-size: 22px;
+  color: #888;
+  line-height: 36px;
 }
-
-.contact-form,
-.contact-address {
-	padding-bottom: 80px;
+.contact-form, .contact-address {
+  padding-bottom: 80px;
 }
-
-.form-group h4,
-.contact-address h4 {
-	padding: 0 0 10px 0;
-	font-size: 30px;
-    font-weight: 300;
-    color: #888;
-    line-height: 34px;
+.form-group h4, .contact-address h4 {
+  padding: 0 0 10px 0;
+  font-size: 30px;
+  font-weight: 300;
+  color: #888;
+  line-height: 34px;
 }
-
 .contact-form p {
-	margin: 15px 0 0 0;
-	font-size: 18px;
-	color: #888;
-	line-height: 32px;
+  margin: 15px 0 0 0;
+  font-size: 18px;
+  color: #888;
+  line-height: 32px;
 }
-
 .contact-form form {
-	margin: 15px 0 0 0;
+  margin: 15px 0 0 0;
 }
-
-.contact-form form input,
+.contact-form form input, .contact-form form textarea {
+  width: 90%;
+  height: 52px;
+  margin-bottom: 20px;
+}
 .contact-form form textarea {
-    width: 90%;
-    height: 52px;
-    margin-bottom: 20px;
+  height: 162px;
+  margin-bottom: 20px;
+  padding: 0 10px;
+  vertical-align: middle;
+  background: #f5f5f5;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 50px;
+  color: #888;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  -o-transition: all .3s;
+  -moz-transition: all .3s;
+  -webkit-transition: all .3s;
+  -ms-transition: all .3s;
+  transition: all .3s;
 }
-
-.contact-form form textarea {
-	height: 162px;
-    margin-bottom: 20px;
-    padding: 0 10px;
-    vertical-align: middle;
-	background: #f5f5f5;
-    border: none;
-    border-bottom: 1px solid #ccc;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 22px;
-    font-weight: 300;
-    line-height: 50px;
-    color: #888;
-    -moz-border-radius: 0;
-    -webkit-border-radius: 0;
-    border-radius: 0;
-    -moz-box-shadow: none;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-    -o-transition: all .3s;
-    -moz-transition: all .3s;
-    -webkit-transition: all .3s;
-    -ms-transition: all .3s;
-    transition: all .3s;
-}
-
 .contact-form form button {
-    width: 130px;
-    height: 52px;
+  width: 130px;
+  height: 52px;
 }
-
 .contact-form form .contact-error {
-	border-color: #F00;
+  border-color: #F00;
 }
-
 .contact-address p {
-	margin-bottom: 30px;
-	font-size: 18px;
-	color: #888;
-    line-height: 32px;
+  margin-bottom: 30px;
+  font-size: 18px;
+  color: #888;
+  line-height: 32px;
 }
-
 .contact-address p i {
-	padding-right: 15px;
-	font-size: 24px;
-	color: #FF6065;
-	vertical-align: middle;
+  padding-right: 15px;
+  font-size: 24px;
+  color: #C7B757;
+  vertical-align: middle;
 }
