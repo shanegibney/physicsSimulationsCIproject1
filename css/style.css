@@ -1,5 +1,74 @@
-@-webkit-viewport   { width: device-width; }
-@-moz-viewport      { width: device-width; }
-@-ms-viewport       { width: device-width; }
-@-o-viewport        { width: device-width; }
-@viewport           { width: device-width; }
+@-webkit-viewport {
+  width: device-width;
+}
+@-moz-viewport {
+  width: device-width;
+}
+@-ms-viewport {
+  width: device-width;
+}
+@-o-viewport {
+  width: device-width;
+}
+@viewport {
+  width: device-width;
+}
+
+/*body {
+  margin: none;
+  padding: none;
+}*/
+
+.container-fluid {
+  margin: none;
+  padding: none;
+  border: 1px solid yellow;
+}
+
+/*.row {
+  margin: none;
+  padding: none;
+}*/
+
+
+/*div.main {
+  background-color: lightblue;
+  border: 2px solid red;
+  padding: 20px;
+  margin: 10px;
+}*/
+
+/*div {
+  padding: none;
+  margin: none;
+  background-color: grey;
+  border: 1px solid black;
+}*/
+
+.simulationOdd {
+  background-color: darkslateblue;
+  border: 1px solid darkslateblue;
+  margin: none;
+}
+.simulationEven {
+  background-color: salmon;
+  border: 1px solid salmon;
+  margin: none;
+}
+.fillout {
+  background-color: lightgrey;
+  /*margin: 20px;
+  padding: 10px;*/
+  border: 1px solid grey;
+}
+.section{
+  background-color: orange;
+  margin: none;
+  padding: none;
+  border: 2px solid red;
+}
+
+/*.row {
+  margin: none;
+  padding: none;
+}*/
