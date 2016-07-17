@@ -160,3 +160,57 @@
 	-moz-transition: all 0.7s;
 	-o-transition: all 0.7s;
 }
+
+/***** Simulation *****/
+
+.simulation-container {
+    margin: 0 auto;
+    text-align: left;
+}
+
+.simulation-text {
+    margin-top: 60px;
+    padding-bottom: 10px;
+}
+
+.simulation-text p {
+	margin-top: 30px;
+	padding: 0 10px;
+    font-size: 22px;
+    line-height: 36px;
+}
+
+.simulation-img {
+    text-align: center;
+	margin-top: 30px;
+}
+
+.simulation-bg1 {
+	background: #FF797E;
+	color: #fff;
+}
+.simulation-bg1 h3 {
+	padding: 0 10px;
+	color: #fff;
+}
+
+.simulation-bg2 {
+	background: #48607D;
+	color: #fff;
+}
+
+.simulation-bg2 h3 {
+	padding: 0 10px;
+	color: #fff;
+}
+
+.simulation-button {
+	margin-top: 40px;
+	margin-left: 10px;
+}
+
+.simulation-button i {
+	padding-right: 8px;
+	font-size: 24px;
+	vertical-align: middle;
+}
