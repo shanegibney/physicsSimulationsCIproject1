@@ -29,16 +29,17 @@
         <div class="row">
           <div class="col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
             <div class="logo">
-              <h1><a href="#"><i class="fa fa-cube"></i> Main title</a></h1>
+              <h1><a href="#"><i class="fa fa-cube"></i>Physics Simulations</a></h1>
             </div>
-            <h2>Sub title</h2>
+            <h2>Conceptualising Physics</h2>
             <div class="description">
-              Description of site
+              Helping students understand physics using animated simulations
             </div>
             <div class="top-button">
-              <a class="btn btn-lg" href="#"><i class="fa fa-pencil-square-o"></i> Sim 1</a>
+              <a class="btn btn-lg" href="#"><i class="fa fa-pencil-square-o"></i>Hooke's law</a>
+              <a class="btn btn-lg" href="#"><i class="fa fa-pencil-square-o"></i>Kepler's aw</a>
+              <a class="btn btn-lg" href="#"><i class="fa fa-pencil-square-o"></i>Projectile motion</a>
             </div>
-            <img src="{% static 'assets/img/1.png' %}" alt="">
           </div>
         </div>
       </div>
@@ -48,22 +49,24 @@
   <!-- Summary -->
   <div class="summary-container">
     <div class="container">
+
       <div class="row">
         <div class="col-sm-12 summary">
           <h3>Explanantion</h3>
           <p>
-            These Physics simulations are meant to demonstrate visually each concept...
+            These Physics simulations will hopefully aid students in understanding the physcis concepts needed
           </p>
         </div>
       </div>
+
       <div class="row">
         <div class="col-sm-4 summary-box">
           <div class="icon">
             <i class="fa fa-file-pdf-o"></i>
           </div>
-          <h4>Simulation One</h4>
+          <h4>Hooke's Law</h4>
           <p>
-            Detailed descroption of simulation one...
+            Detailed description of simulation one...
           </p>
         </div>
 
@@ -71,9 +74,9 @@
           <div class="icon">
             <i class="fa fa-file-pdf-o"></i>
           </div>
-          <h4>Simulation Two</h4>
+          <h4>Kepler's Law</h4>
           <p>
-            Detailed descroption of simulation two...
+            Detailed description of simulation two...
           </p>
         </div>
 
@@ -81,9 +84,9 @@
           <div class="icon">
             <i class="fa fa-file-pdf-o"></i>
           </div>
-          <h4>Simulation Three</h4>
+          <h4>Projectile Motion</h4>
           <p>
-            Detailed descroption of simulation three...
+            Detailed description of simulation three...
           </p>
         </div>
       </div>
@@ -170,10 +173,31 @@
     <div class="contact-container">
       <div class="container">
         <div class="row">
-          <p>Contact info</p>
+          <div class="col-sm-12 contact">
+            <h3>Contact Us</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi pharetra odio ac felis iaculis cursus aliquet quis orci. Nunc id lorem ut mi euismod accumsan.
+            </p>
+          </div>
         </div>
         <div class="row">
-          <p>Contact forms</p>
+          <div class="col-sm-7 form-group contact-form">
+            <h4>Send message</h4>
+            <form method="post" action="assets/contact.php">
+              <input type="text" name="email" placeholder="Email" class="form-control contact-email">
+              <input type="text" name="subject" placeholder="Subject" class="form-control contact-subject">
+              <textarea name="message" class="form-control" placeholder="Message"></textarea>
+              <button type="submit" class="btn btn-contact">Submit</button>
+            </form>
+          </div>
+          <div class="col-sm-5 contact-address contact-about">
+            <h4>About Us</h4>
+            <p>Fusce at leo eros. Morbi mauris arcu, eleifend sit amet turpis ac, porta luctus neque. Etiam ultricies ac augue a venenatis. Quisque aliquam odio eu magna sodales, vel interdum erat suscipit. Mauris ut porttitor tellus.
+            </p>
+            <h4>Address</h4>
+            <p><i class="fa fa-map-marker"></i>13 Brant Street, Burlington, Ontario, Canada</p>
+            <p><i class="fa fa-phone"></i>Phone: 0011 222 335 7773</p>
+          </div>
         </div>
       </div>
     </div>
@@ -196,7 +220,11 @@
       document.querySelector('head').appendChild(msViewportStyle)
     }
   </script>
-
+  <script src="js/jquery-1.10.2.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.backstretch.min.js"></script>
+  <script src="js/retina-1.1.0.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>
