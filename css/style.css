@@ -14,61 +14,50 @@
   width: device-width;
 }
 
-/*body {
-  margin: none;
-  padding: none;
-}*/
+/***** Main content *****/
 
-.container-fluid {
-  margin: none;
-  padding: none;
-  border: 1px solid yellow;
+.main-content {
+  margin: 0 auto;
+  text-align: center;
+  color: #fff;
 }
-
-/*.row {
-  margin: none;
-  padding: none;
-}*/
-
-
-/*div.main {
-  background-color: lightblue;
-  border: 2px solid red;
-  padding: 20px;
-  margin: 10px;
-}*/
-
-/*div {
-  padding: none;
-  margin: none;
-  background-color: grey;
-  border: 1px solid black;
-}*/
-
-.simulationOdd {
-  background-color: darkslateblue;
-  border: 1px solid darkslateblue;
-  margin: none;
+.main-bg {
+  padding: 0;
+  padding-top: 80px;
+  background: url("../img/pattern.png") repeat scroll 0 0 rgba(0, 0, 0, 0.3);
 }
-.simulationEven {
-  background-color: salmon;
-  border: 1px solid salmon;
-  margin: none;
+.main-content .text {
+  padding-top: 50px;
 }
-.fillout {
-  background-color: lightgrey;
-  /*margin: 20px;
-  padding: 10px;*/
-  border: 1px solid grey;
+.main-content h2 {
+  margin: 40px 0 10px 0;
+  font-weight: 400;
 }
-.section{
-  background-color: orange;
-  margin: none;
-  padding: none;
-  border: 2px solid red;
+.main-content .logo h1 {
+  margin: 0;
 }
-
-/*.row {
-  margin: none;
-  padding: none;
-}*/
+.main-content .logo a {
+  display: inline-block;
+  font-size: 58px;
+  line-height: 68px;
+  font-weight: 600;
+  color: #FF797E;
+}
+.main-content .logo a:hover {
+  color: #FF6065;
+}
+.main-content .description {
+  margin: 40px 0 10px 0;
+  font-size: 28px;
+  line-height: 38px;
+  font-weight: 400;
+}
+.main-content .main-button {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.main-content .main-button i {
+  padding-right: 3px;
+  font-size: 28px;
+  vertical-align: middle;
+}
