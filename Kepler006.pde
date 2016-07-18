@@ -5,19 +5,18 @@ int num = 30;
 float[] xpos = new float[num];
 float[] ypos = new float[num];
 int x = 20, y = 10, w = 80, h = 20;
-boolean sweep = false;
+boolean sweep = true;
 boolean path = false;
 boolean pause = false;
 void setup() {
-  size(620, 400);
-  background(199,183,87);
+  size(310, 200);
   smooth();
   textSize(13);
   pos = new PVector(140.0, 130.0);//initial position
   v0 = new PVector(1.8, -0.5);//initial velocity near perfect ellipse
   vel = new PVector(v0.x, v0.y);//velocity
   acc = new PVector(0, 0);
-  CM = new PVector(width/2 + 30, height/2);
+  CM = new PVector(310 + 30, 200);
   r = new PVector(0, 0);
   for (int i = 0; i < xpos.length; i ++ ) {
     xpos[i] = pos.x;
@@ -25,7 +24,9 @@ void setup() {
   }
 }
 void draw() {
+  //background(199,173,87);//not seen
   buttons();
+  //background(199,183,87);//visible but no buttons
   for (int i = 0; i < xpos.length-1; i ++ ) {
     xpos[i] = xpos[i+1];
     ypos[i] = ypos[i+1];
@@ -47,18 +48,18 @@ void draw() {
     noStroke();
     beginShape();
     for (int i = 0; i < xpos.length -1; i++) {
-      vertex(xpos[i], ypos[i]);
-      vertex(xpos[i+1], ypos[i+1]);
-      vertex(CM.x, CM.y);
+      vertex(xpos[i]/2, ypos[i]/2);
+      vertex(xpos[i+1]/2, ypos[i+1]/2);
+      vertex(CM.x/2, CM.y/2);
     }
     endShape();
   }
   stroke(0);
   fill(#0006F7);//blue
-  ellipse(xpos[num-1], ypos[num-1], radius, radius);//the particle itself!
+  ellipse(xpos[num-1]/2, ypos[num-1]/2, radius, radius);//the particle itself!
   stroke(#FFFBB2);//yellow
   fill(#FEFF00);//yellow
-  ellipse(CM.x, CM.y, 25, 25);
+  ellipse(CM.x/2, CM.y/2, 25, 25);
   /*println("pos.x = ", pos.x);
    println("pos.y = ", pos.y);
    println("vel.x = ", vel.x);
@@ -71,55 +72,66 @@ void draw() {
 void buttons() {
   stroke(#999999);
   if (!path) {//hold down mouse to see path
-    background(255);
+    background(199, 183, 87);
   }
   if (path) {
-    fill(#BBBBBB);//on
-    rect(20, y, w, h);//path
+    //sweep = false;
+    //background(199, 183, 87);
+    fill(142, 170, 148);//on
+    rect(20, y, w + 10, h);//path
     fill(255);
-    text("Show path", 20 + 3, y + 15);
-    fill(#DDDDDD);
+    text("Remove path", 20 + 3, y + 15);
+    fill(#FFFFFF);
   } else {
-    fill(#DDDDDD);//off
-    rect(20, y, w, h);//path
+    fill(#FFFFFF);//off
+    rect(20, y, w - 5, h);//path
     fill(0, 0, 255);
     text("Show path", 20 + 3, y + 15);
-    fill(#DDDDDD);
+    fill(#FFFFFF);
   }
   if (sweep) {
-    fill(#BBBBBB);//on
-    rect(120, y, w, h);//path
+    //path = false;
+    fill(142, 170, 148);//on
+    rect(120, y, w + 5, h);//path
     fill(255);
-    text("Area", 120 + 3, y + 15);
-    fill(#DDDDDD);
+    text("Remove area", 120 + 3, y + 15);
+    fill(#FFFFFF);
   } else {
-    fill(#DDDDDD);//off
-    rect(120, y, w, h);//path
+    fill(#FFFFFF);//off
+    rect(120, y, w - 5, h);//path
     fill(0, 0, 255);
-    text("Area", 120 + 3, y + 15);
-    fill(#DDDDDD);
+    text("Show area", 120 + 3, y + 15);
+    fill(#FFFFFF);
   }
-  fill(#DDDDDD);//off
+  fill(#FFFFFF);//off
   rect(220, y, w, h);//path
   fill(0, 0, 255);
   text("Pause", 220 + 3, y + 15);
-  fill(#DDDDDD);
+  fill(#FFFFFF);
 }
 void mousePressed() {
   if (mouseX > 20 && mouseX < 20 + w && mouseY > y && mouseY < y + h) {
+    background(199, 183, 87);
     path = !path;
+    if (sweep) {
+      sweep = false;
+    }
   }
   if (mouseX > 120 && mouseX < 120 + w && mouseY > y && mouseY < y + h) {
+    background(199, 183, 87);
     sweep = !sweep;
+    if (path) {
+      path = false;
+    }
   }
   if (mouseX > 220 && mouseX < 220 + w && mouseY > y && mouseY < y + h) {
     if (!pause) {
       stroke(#999999);
-      fill(#BBBBBB);//on
+      fill(142, 170, 148);//on
       rect(220, y, w, h);//path
-      fill(255);
-      text("Pause", 220 + 3, y + 15);
-      fill(#DDDDDD);
+      fill(#FFFFFF);
+      text("Run", 220 + 3, y + 15);
+      fill(#FFFFFF);
     }
     pause = !pause;
     if (pause)
